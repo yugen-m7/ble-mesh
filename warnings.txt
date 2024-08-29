@@ -1,0 +1,2145 @@
+Enabled checks:
+    bugprone-argument-comment
+    bugprone-assert-side-effect
+    bugprone-assignment-in-if-condition
+    bugprone-bad-signal-to-kill-thread
+    bugprone-bool-pointer-implicit-conversion
+    bugprone-branch-clone
+    bugprone-copy-constructor-init
+    bugprone-dangling-handle
+    bugprone-dynamic-static-initializers
+    bugprone-easily-swappable-parameters
+    bugprone-exception-escape
+    bugprone-fold-init-type
+    bugprone-forward-declaration-namespace
+    bugprone-forwarding-reference-overload
+    bugprone-implicit-widening-of-multiplication-result
+    bugprone-inaccurate-erase
+    bugprone-incorrect-roundings
+    bugprone-infinite-loop
+    bugprone-integer-division
+    bugprone-lambda-function-name
+    bugprone-macro-repeated-side-effects
+    bugprone-misplaced-operator-in-strlen-in-alloc
+    bugprone-misplaced-pointer-arithmetic-in-alloc
+    bugprone-misplaced-widening-cast
+    bugprone-move-forwarding-reference
+    bugprone-multiple-statement-macro
+    bugprone-narrowing-conversions
+    bugprone-no-escape
+    bugprone-not-null-terminated-result
+    bugprone-parent-virtual-call
+    bugprone-posix-return
+    bugprone-redundant-branch-condition
+    bugprone-reserved-identifier
+    bugprone-shared-ptr-array-mismatch
+    bugprone-signal-handler
+    bugprone-signed-char-misuse
+    bugprone-sizeof-container
+    bugprone-sizeof-expression
+    bugprone-spuriously-wake-up-functions
+    bugprone-standalone-empty
+    bugprone-string-constructor
+    bugprone-string-integer-assignment
+    bugprone-string-literal-with-embedded-nul
+    bugprone-stringview-nullptr
+    bugprone-suspicious-enum-usage
+    bugprone-suspicious-include
+    bugprone-suspicious-memory-comparison
+    bugprone-suspicious-memset-usage
+    bugprone-suspicious-missing-comma
+    bugprone-suspicious-realloc-usage
+    bugprone-suspicious-semicolon
+    bugprone-suspicious-string-compare
+    bugprone-swapped-arguments
+    bugprone-terminating-continue
+    bugprone-throw-keyword-missing
+    bugprone-too-small-loop-variable
+    bugprone-unchecked-optional-access
+    bugprone-undefined-memory-manipulation
+    bugprone-undelegated-constructor
+    bugprone-unhandled-exception-at-new
+    bugprone-unhandled-self-assignment
+    bugprone-unused-raii
+    bugprone-unused-return-value
+    bugprone-use-after-move
+    bugprone-virtual-near-miss
+    clang-analyzer-core.CallAndMessage
+    clang-analyzer-core.CallAndMessageModeling
+    clang-analyzer-core.DivideZero
+    clang-analyzer-core.DynamicTypePropagation
+    clang-analyzer-core.NonNullParamChecker
+    clang-analyzer-core.NonnilStringConstants
+    clang-analyzer-core.NullDereference
+    clang-analyzer-core.StackAddrEscapeBase
+    clang-analyzer-core.StackAddressEscape
+    clang-analyzer-core.UndefinedBinaryOperatorResult
+    clang-analyzer-core.VLASize
+    clang-analyzer-core.builtin.BuiltinFunctions
+    clang-analyzer-core.builtin.NoReturnFunctions
+    clang-analyzer-core.uninitialized.ArraySubscript
+    clang-analyzer-core.uninitialized.Assign
+    clang-analyzer-core.uninitialized.Branch
+    clang-analyzer-core.uninitialized.CapturedBlockVariable
+    clang-analyzer-core.uninitialized.NewArraySize
+    clang-analyzer-core.uninitialized.UndefReturn
+    clang-analyzer-unix.API
+    clang-analyzer-unix.DynamicMemoryModeling
+    clang-analyzer-unix.Malloc
+    clang-analyzer-unix.MallocSizeof
+    clang-analyzer-unix.MismatchedDeallocator
+    clang-analyzer-unix.Vfork
+    clang-analyzer-unix.cstring.BadSizeArg
+    clang-analyzer-unix.cstring.CStringModeling
+    clang-analyzer-unix.cstring.NullArg
+    performance-faster-string-find
+    performance-for-range-copy
+    performance-implicit-conversion-in-loop
+    performance-inefficient-algorithm
+    performance-inefficient-string-concatenation
+    performance-inefficient-vector-operation
+    performance-move-const-arg
+    performance-move-constructor-init
+    performance-no-automatic-move
+    performance-no-int-to-ptr
+    performance-noexcept-move-constructor
+    performance-trivially-destructible
+    performance-type-promotion-in-math-fn
+    performance-unnecessary-copy-initialization
+    performance-unnecessary-value-param
+    readability-braces-around-statements
+    readability-const-return-type
+    readability-container-contains
+    readability-container-data-pointer
+    readability-container-size-empty
+    readability-convert-member-functions-to-static
+    readability-delete-null-pointer
+    readability-duplicate-include
+    readability-else-after-return
+    readability-function-cognitive-complexity
+    readability-function-size
+    readability-identifier-length
+    readability-identifier-naming
+    readability-implicit-bool-conversion
+    readability-inconsistent-declaration-parameter-name
+    readability-isolate-declaration
+    readability-make-member-function-const
+    readability-misleading-indentation
+    readability-misplaced-array-index
+    readability-named-parameter
+    readability-non-const-parameter
+    readability-qualified-auto
+    readability-redundant-access-specifiers
+    readability-redundant-control-flow
+    readability-redundant-declaration
+    readability-redundant-function-ptr-dereference
+    readability-redundant-member-init
+    readability-redundant-preprocessor
+    readability-redundant-smartptr-get
+    readability-redundant-string-cstr
+    readability-redundant-string-init
+    readability-simplify-boolean-expr
+    readability-simplify-subscript-expr
+    readability-static-accessed-through-instance
+    readability-static-definition-in-anonymous-namespace
+    readability-string-compare
+    readability-suspicious-call-argument
+    readability-uniqueptr-delete-release
+    readability-uppercase-literal-suffix
+    readability-use-anyofallof
+
+/home/xyz/.espressif/tools/esp-clang/16.0.1-fe4f10a809/esp-clang/bin/clang-tidy -header-filter=.*\..* -checks=-*,clang-analyzer-core.NullDereference,clang-analyzer-unix.*,bugprone-*,-bugprone-macro-parentheses,readability-*,performance-*,-readability-magic-numbers,-readability-avoid-const-params-in-decls -p=build /home/xyz/code/esp/projects/practise/mesh_server/main/main.c
+error: unknown argument: '-fno-shrink-wrap' [clang-diagnostic-error]
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/api/core/include/esp_ble_mesh_ble_api.h:8:9: warning: declaration uses identifier '_ESP_BLE_MESH_BLE_API_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _ESP_BLE_MESH_BLE_API_H_
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        ESP_BLE_MESH_BLE_API_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/api/core/include/esp_ble_mesh_common_api.h:8:9: warning: declaration uses identifier '_ESP_BLE_MESH_COMMON_API_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _ESP_BLE_MESH_COMMON_API_H_
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ESP_BLE_MESH_COMMON_API_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/api/core/include/esp_ble_mesh_provisioning_api.h:8:9: warning: declaration uses identifier '_ESP_BLE_MESH_PROVISIONING_API_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _ESP_BLE_MESH_PROVISIONING_API_H_
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ESP_BLE_MESH_PROVISIONING_API_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/api/esp_ble_mesh_defs.h:8:9: warning: declaration uses identifier '_ESP_BLE_MESH_DEFS_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _ESP_BLE_MESH_DEFS_H_
+        ^~~~~~~~~~~~~~~~~~~~~
+        ESP_BLE_MESH_DEFS_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/api/models/include/esp_ble_mesh_config_model_api.h:8:9: warning: declaration uses identifier '_ESP_BLE_MESH_CONFIG_MODEL_API_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _ESP_BLE_MESH_CONFIG_MODEL_API_H_
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ESP_BLE_MESH_CONFIG_MODEL_API_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/api/models/include/esp_ble_mesh_generic_model_api.h:12:9: warning: declaration uses identifier '_ESP_BLE_MESH_GENERIC_MODEL_API_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _ESP_BLE_MESH_GENERIC_MODEL_API_H_
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ESP_BLE_MESH_GENERIC_MODEL_API_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/atomic.h:10:9: warning: declaration uses identifier '_BLE_MESH_ATOMIC_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_ATOMIC_H_
+        ^~~~~~~~~~~~~~~~~~~
+        BLE_MESH_ATOMIC_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/buf.h:12:9: warning: declaration uses identifier '_BLE_MESH_BUF_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_BUF_H_
+        ^~~~~~~~~~~~~~~~
+        BLE_MESH_BUF_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/buf.h:42:9: warning: declaration uses identifier '__net_buf_align', which is a reserved identifier [bugprone-reserved-identifier]
+#define __net_buf_align __aligned(sizeof(int))
+        ^~~~~~~~~~~~~~~
+        net_buf_align
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/buf.h:108:14: warning: declaration uses identifier '__buf', which is a reserved identifier [bugprone-reserved-identifier]
+    uint8_t *__buf;
+             ^~~~~
+             _buf
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/buf.h:791:22: warning: declaration uses identifier '__buf', which is a reserved identifier [bugprone-reserved-identifier]
+            uint8_t *__buf;
+                     ^~~~~
+                     _buf
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/buf.h:837:27: warning: declaration uses identifier '__bufs', which is a reserved identifier [bugprone-reserved-identifier]
+    struct net_buf *const __bufs;
+                          ^~~~~~
+                          _bufs
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:8:9: warning: declaration uses identifier '_BLE_MESH_BYTEORDER_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_BYTEORDER_H_
+        ^~~~~~~~~~~~~~~~~~~~~~
+        BLE_MESH_BYTEORDER_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:19:9: warning: declaration uses identifier '__bswap_16', which is a reserved identifier [bugprone-reserved-identifier]
+#define __bswap_16(x) ((uint16_t) ((((x) >> 8) & 0xff) | (((x) & 0xff) << 8)))
+        ^~~~~~~~~~
+        bswap_16
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:23:9: warning: declaration uses identifier '__bswap_24', which is a reserved identifier [bugprone-reserved-identifier]
+#define __bswap_24(x) ((uint32_t) ((((x) >> 16) & 0xff) | \
+        ^~~~~~~~~~
+        bswap_24
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:29:9: warning: declaration uses identifier '__bswap_32', which is a reserved identifier [bugprone-reserved-identifier]
+#define __bswap_32(x) ((uint32_t) ((((x) >> 24) & 0xff) | \
+        ^~~~~~~~~~
+        bswap_32
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:36:9: warning: declaration uses identifier '__bswap_48', which is a reserved identifier [bugprone-reserved-identifier]
+#define __bswap_48(x) ((uint64_t) ((((x) >> 40) & 0xff) | \
+        ^~~~~~~~~~
+        bswap_48
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:45:9: warning: declaration uses identifier '__bswap_64', which is a reserved identifier [bugprone-reserved-identifier]
+#define __bswap_64(x) ((uint64_t) ((((x) >> 56) & 0xff) | \
+        ^~~~~~~~~~
+        bswap_64
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:557:36: warning: 2 adjacent parameters of 'sys_memcpy_swap' of convertible types are easily swapped by mistake [bugprone-easily-swappable-parameters]
+static inline void sys_memcpy_swap(void *dst, const void *src, size_t length)
+                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:557:42: note: the first parameter in the range is 'dst'
+static inline void sys_memcpy_swap(void *dst, const void *src, size_t length)
+                                         ^~~
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:557:59: note: the last parameter in the range is 'src'
+static inline void sys_memcpy_swap(void *dst, const void *src, size_t length)
+                                                          ^~~
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:557:47: note: 'void *' and 'const void *' may be implicitly converted
+static inline void sys_memcpy_swap(void *dst, const void *src, size_t length)
+                                              ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:585:12: warning: variable name 'i' is too short, expected at least 3 characters [readability-identifier-length]
+    size_t i;
+           ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/common.h:12:9: warning: declaration uses identifier '_BLE_MESH_COMMON_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_COMMON_H_
+        ^~~~~~~~~~~~~~~~~~~
+        BLE_MESH_COMMON_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/compiler.h:8:9: warning: declaration uses identifier '_BLE_MESH_COMPILER_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_COMPILER_H_
+        ^~~~~~~~~~~~~~~~~~~~~
+        BLE_MESH_COMPILER_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/compiler.h:14:9: warning: declaration uses identifier '___in_section', which is a reserved identifier [bugprone-reserved-identifier]
+#define ___in_section(a, b, c)
+        ^~~~~~~~~~~~~
+        in_section
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/compiler.h:16:9: warning: declaration uses identifier '__in_section', which is a reserved identifier [bugprone-reserved-identifier]
+#define __in_section(a, b, c) ___in_section(a, b, c)
+        ^~~~~~~~~~~~
+        in_section
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/compiler.h:18:9: warning: declaration uses identifier '__in_section_unique', which is a reserved identifier [bugprone-reserved-identifier]
+#define __in_section_unique(seg) ___in_section(seg, __FILE__, __COUNTER__)
+        ^~~~~~~~~~~~~~~~~~~
+        in_section_unique
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/config.h:8:9: warning: declaration uses identifier '_BLE_MESH_CONFIG_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_CONFIG_H_
+        ^~~~~~~~~~~~~~~~~~~
+        BLE_MESH_CONFIG_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/ffs.h:9:9: warning: declaration uses identifier '_BLE_MESH_FFS_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_FFS_H_
+        ^~~~~~~~~~~~~~~~
+        BLE_MESH_FFS_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/ffs.h:30:57: warning: parameter name 'op' is too short, expected at least 3 characters [readability-identifier-length]
+static ALWAYS_INLINE unsigned int find_msb_set(uint32_t op)
+                                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/ffs.h:51:57: warning: parameter name 'op' is too short, expected at least 3 characters [readability-identifier-length]
+static ALWAYS_INLINE unsigned int find_lsb_set(uint32_t op)
+                                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/ffs.h:53:26: warning: narrowing conversion from 'uint32_t' (aka 'unsigned int') to signed type 'int' is implementation-defined [bugprone-narrowing-conversions]
+    return __builtin_ffs(op);
+                         ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/kernel.h:9:9: warning: declaration uses identifier '_BLE_MESH_KERNEL_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_KERNEL_H_
+        ^~~~~~~~~~~~~~~~~~~
+        BLE_MESH_KERNEL_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/mutex.h:8:9: warning: declaration uses identifier '_BLE_MESH_MUTEX_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_MUTEX_H_
+        ^~~~~~~~~~~~~~~~~~
+        BLE_MESH_MUTEX_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/slist.h:18:9: warning: declaration uses identifier '_BLE_MESH_SLIST_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_SLIST_H_
+        ^~~~~~~~~~~~~~~~~~
+        BLE_MESH_SLIST_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/slist.h:28:8: warning: declaration uses identifier '_snode', which is reserved in the global namespace [bugprone-reserved-identifier]
+struct _snode {
+       ^~~~~~
+       snode
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/slist.h:34:8: warning: declaration uses identifier '_slist', which is reserved in the global namespace [bugprone-reserved-identifier]
+struct _slist {
+       ^~~~~~
+       slist
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/slist.h:315:42: warning: 2 adjacent parameters of 'sys_slist_append_list' of similar type ('void *') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+                                         void *head, void *tail)
+                                         ^~~~~~~~~~~~~~~~~~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/slist.h:315:48: note: the first parameter in the range is 'head'
+                                         void *head, void *tail)
+                                               ^~~~
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/slist.h:315:60: note: the last parameter in the range is 'tail'
+                                         void *head, void *tail)
+                                                           ^~~~
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/timer.h:9:9: warning: declaration uses identifier '_BLE_MESH_TIMER_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_TIMER_H_
+        ^~~~~~~~~~~~~~~~~~
+        BLE_MESH_TIMER_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/timer.h:35:9: warning: declaration uses identifier '_INACTIVE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _INACTIVE       (-1)
+        ^~~~~~~~~
+        INACTIVE
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/timer.h:58:9: warning: declaration uses identifier '_K_WORK_INITIALIZER', which is a reserved identifier [bugprone-reserved-identifier]
+#define _K_WORK_INITIALIZER(work_handler)   \
+        ^~~~~~~~~~~~~~~~~~~
+        K_WORK_INITIALIZER
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/trace.h:10:9: warning: declaration uses identifier '_BLE_MESH_TRACE_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_TRACE_H_
+        ^~~~~~~~~~~~~~~~~~
+        BLE_MESH_TRACE_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/trace.h:72:9: warning: declaration uses identifier '_STRINGIFY', which is a reserved identifier [bugprone-reserved-identifier]
+#define _STRINGIFY(x)   #x
+        ^~~~~~~~~~
+        STRINGIFY
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/trace.h:76:9: warning: declaration uses identifier '__ASSERT', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ASSERT(test, str) assert(test)
+        ^~~~~~~~
+        ASSERT
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/trace.h:80:9: warning: declaration uses identifier '__ASSERT_NO_MSG', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ASSERT_NO_MSG(x) assert(x)
+        ^~~~~~~~~~~~~~~
+        ASSERT_NO_MSG
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/types.h:9:9: warning: declaration uses identifier '_BLE_MESH_TYPES_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_TYPES_H_
+        ^~~~~~~~~~~~~~~~~~
+        BLE_MESH_TYPES_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/utils.h:15:9: warning: declaration uses identifier '_BLE_MESH_UTILS_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_UTILS_H_
+        ^~~~~~~~~~~~~~~~~~
+        BLE_MESH_UTILS_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/utils.h:169:9: warning: declaration uses identifier '_XXXX1', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XXXX1 _YYYY,
+        ^~~~~~
+        XXXX1
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/common/include/mesh/utils_loops.h:15:9: warning: declaration uses identifier '_BLE_MESH_UTIL_LOOPS_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_UTIL_LOOPS_H_
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        BLE_MESH_UTIL_LOOPS_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/access.h:12:9: warning: declaration uses identifier '_BLE_MESH_ACCESS_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_ACCESS_H_
+        ^~~~~~~~~~~~~~~~~~~
+        BLE_MESH_ACCESS_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/access.h:574:54: warning: parameter name 'cb' is too short, expected at least 3 characters [readability-identifier-length]
+                       const struct bt_mesh_send_cb *cb,
+                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/access.h:610:78: warning: parameter name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+struct bt_mesh_model *bt_mesh_model_find(struct bt_mesh_elem *elem, uint16_t id);
+                                                                             ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/access.h:622:73: warning: parameter name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+                                             uint16_t company, uint16_t id);
+                                                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/adapter.h:10:9: warning: declaration uses identifier '_BLE_MESH_ADAPTER_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_ADAPTER_H_
+        ^~~~~~~~~~~~~~~~~~~~
+        BLE_MESH_ADAPTER_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/adapter.h:530:76: warning: parameter name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+    void (*connected)(bt_mesh_addr_t *addr, struct bt_mesh_conn *conn, int id);
+                                                                           ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/adapter.h:688:52: warning: parameter name 'ad' is too short, expected at least 3 characters [readability-identifier-length]
+                    const struct bt_mesh_adv_data *ad, size_t ad_len,
+                                                   ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/adapter.h:689:52: warning: parameter name 'sd' is too short, expected at least 3 characters [readability-identifier-length]
+                    const struct bt_mesh_adv_data *sd, size_t sd_len);
+                                                   ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/adapter.h:698:80: warning: parameter name 'cb' is too short, expected at least 3 characters [readability-identifier-length]
+int bt_le_scan_start(const struct bt_mesh_scan_param *param, bt_mesh_scan_cb_t cb);
+                                                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/adapter.h:717:56: warning: parameter name 'wl' is too short, expected at least 3 characters [readability-identifier-length]
+int bt_le_update_white_list(struct bt_mesh_white_list *wl);
+                                                       ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/adapter.h:719:61: warning: parameter name 'cb' is too short, expected at least 3 characters [readability-identifier-length]
+void bt_mesh_gatts_conn_cb_register(struct bt_mesh_conn_cb *cb);
+                                                            ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/adapter.h:758:66: warning: parameter name 'cb' is too short, expected at least 3 characters [readability-identifier-length]
+void bt_mesh_gattc_conn_cb_register(struct bt_mesh_prov_conn_cb *cb);
+                                                                 ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/include/mesh/uuid.h:11:9: warning: declaration uses identifier '_BLE_MESH_UUID_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _BLE_MESH_UUID_H_
+        ^~~~~~~~~~~~~~~~~
+        BLE_MESH_UUID_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/net.h:11:9: warning: declaration uses identifier '_NET_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _NET_H_
+        ^~~~~~~
+        NET_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/net.h:455:47: warning: parameter name 'tx' is too short, expected at least 3 characters [readability-identifier-length]
+int bt_mesh_net_encode(struct bt_mesh_net_tx *tx, struct net_buf_simple *buf,
+                                              ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/net.h:458:45: warning: parameter name 'tx' is too short, expected at least 3 characters [readability-identifier-length]
+int bt_mesh_net_send(struct bt_mesh_net_tx *tx, struct net_buf *buf,
+                                            ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/net.h:459:52: warning: parameter name 'cb' is too short, expected at least 3 characters [readability-identifier-length]
+                     const struct bt_mesh_send_cb *cb, void *cb_data);
+                                                   ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/net.h:463:54: warning: parameter name 'cb' is too short, expected at least 3 characters [readability-identifier-length]
+                       const struct bt_mesh_send_cb *cb, void *cb_data);
+                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/net.h:466:47: warning: parameter name 'rx' is too short, expected at least 3 characters [readability-identifier-length]
+                       struct bt_mesh_net_rx *rx, struct net_buf_simple *buf);
+                                              ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/net.h:482:54: warning: parameter name 'rx' is too short, expected at least 3 characters [readability-identifier-length]
+                              struct bt_mesh_net_rx *rx);
+                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/net.h:509:67: warning: parameter name 'cb' is too short, expected at least 3 characters [readability-identifier-length]
+static inline void send_cb_finalize(const struct bt_mesh_send_cb *cb,
+                                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/proxy_server.h:11:9: warning: declaration uses identifier '_PROXY_SERVER_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _PROXY_SERVER_H_
+        ^~~~~~~~~~~~~~~~
+        PROXY_SERVER_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/proxy_server.h:84:65: warning: parameter name 'cb' is too short, expected at least 3 characters [readability-identifier-length]
+void bt_mesh_proxy_server_set_conn_cb(proxy_server_connect_cb_t cb);
+                                                                ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/proxy_server.h:85:71: warning: parameter name 'cb' is too short, expected at least 3 characters [readability-identifier-length]
+void bt_mesh_proxy_server_set_disconn_cb(proxy_server_disconnect_cb_t cb);
+                                                                      ^
+/home/xyz/code/esp/idf/esp-idf/components/bt/esp_ble_mesh/core/pvnr_mgmt.h:8:9: warning: declaration uses identifier '_PVNR_MGMT_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _PVNR_MGMT_H_
+        ^~~~~~~~~~~~~
+        PVNR_MGMT_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/host/bluedroid/api/include/api/esp_bt_main.h:8:9: warning: declaration uses identifier '__ESP_BT_MAIN_H__', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ESP_BT_MAIN_H__
+        ^~~~~~~~~~~~~~~~~
+        ESP_BT_MAIN_H_
+/home/xyz/code/esp/idf/esp-idf/components/bt/include/esp32/include/esp_bt.h:8:9: warning: declaration uses identifier '__ESP_BT_H__', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ESP_BT_H__
+        ^~~~~~~~~~~~
+        ESP_BT_H_
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_assert.h:7:9: warning: declaration uses identifier '__ESP_ASSERT_H__', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ESP_ASSERT_H__
+        ^~~~~~~~~~~~~~~~
+        ESP_ASSERT_H_
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_attr.h:8:9: warning: declaration uses identifier '__ESP_ATTR_H__', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ESP_ATTR_H__
+        ^~~~~~~~~~~~~~
+        ESP_ATTR_H_
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_attr.h:137:9: warning: declaration uses identifier '__NOINIT_ATTR', which is a reserved identifier [bugprone-reserved-identifier]
+#define __NOINIT_ATTR _SECTION_ATTR_IMPL(".noinit", __COUNTER__)
+        ^~~~~~~~~~~~~
+        NOINIT_ATTR
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_attr.h:188:9: warning: declaration uses identifier '_SECTION_ATTR_IMPL', which is a reserved identifier [bugprone-reserved-identifier]
+#define _SECTION_ATTR_IMPL(SECTION, COUNTER) __attribute__((section(SECTION "." _COUNTER_STRINGIFY(COUNTER))))
+        ^~~~~~~~~~~~~~~~~~
+        SECTION_ATTR_IMPL
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_attr.h:189:9: warning: declaration uses identifier '_COUNTER_STRINGIFY', which is a reserved identifier [bugprone-reserved-identifier]
+#define _COUNTER_STRINGIFY(COUNTER) #COUNTER
+        ^~~~~~~~~~~~~~~~~~
+        COUNTER_STRINGIFY
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_err.h:79:40: warning: parameter name 'rc' is too short, expected at least 3 characters [readability-identifier-length]
+void _esp_error_check_failed(esp_err_t rc, const char *file, int line, const char *function, const char *expression) __attribute__((__noreturn__));
+                                       ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_err.h:81:6: warning: declaration uses identifier '_esp_error_check_failed_without_abort', which is reserved in the global namespace [bugprone-reserved-identifier]
+void _esp_error_check_failed_without_abort(esp_err_t rc, const char *file, int line, const char *function, const char *expression);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     esp_error_check_failed_without_abort
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_err.h:81:54: warning: parameter name 'rc' is too short, expected at least 3 characters [readability-identifier-length]
+void _esp_error_check_failed_without_abort(esp_err_t rc, const char *file, int line, const char *function, const char *expression);
+                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_macros.h:57:10: warning: declaration uses identifier '__VA_NARG__', which is a reserved identifier [bugprone-reserved-identifier]
+# define __VA_NARG__(...)   __NARG__(_0, ##__VA_ARGS__, __RSEQ_N__())
+         ^~~~~~~~~~~
+         VA_NARG_
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_macros.h:59:10: warning: declaration uses identifier '__NARG__', which is a reserved identifier [bugprone-reserved-identifier]
+# define __NARG__(...)      __GET_NTH_ARG__(__VA_ARGS__)
+         ^~~~~~~~
+         NARG_
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_macros.h:60:10: warning: declaration uses identifier '__GET_NTH_ARG__', which is a reserved identifier [bugprone-reserved-identifier]
+# define __GET_NTH_ARG__( \
+         ^~~~~~~~~~~~~~~
+         GET_NTH_ARG_
+/home/xyz/code/esp/idf/esp-idf/components/esp_common/include/esp_macros.h:68:10: warning: declaration uses identifier '__RSEQ_N__', which is a reserved identifier [bugprone-reserved-identifier]
+# define __RSEQ_N__() \
+         ^~~~~~~~~~
+         RSEQ_N_
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_cpu.h:191:75: warning: parameter name 'pc' is too short, expected at least 3 characters [readability-identifier-length]
+FORCE_INLINE_ATTR __attribute__((pure)) void *esp_cpu_pc_to_addr(uint32_t pc)
+                                                                          ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_cpu.h:195:12: warning: integer to pointer cast pessimizes optimization opportunities [performance-no-int-to-ptr]
+    return (void *)((pc & 0x3fffffffU) | 0x40000000U);
+           ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:41:48: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_in_iram(const void *p) {
+                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:57:48: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_in_dram(const void *p) {
+                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:69:54: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_in_diram_dram(const void *p) {
+                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:81:54: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_in_diram_iram(const void *p) {
+                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:98:57: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_in_rtc_iram_fast(const void *p) {
+                                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:114:57: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_in_rtc_dram_fast(const void *p) {
+                                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:130:52: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_in_rtc_slow(const void *p) {
+                                                   ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:145:61: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static void * esp_ptr_diram_dram_to_iram(const void *p) {
+                                                            ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:147:12: warning: integer to pointer cast pessimizes optimization opportunities [performance-no-int-to-ptr]
+    return (void *) ( SOC_DIRAM_IRAM_LOW + (SOC_DIRAM_DRAM_HIGH - (intptr_t)p) - 4);
+           ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:159:61: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static void * esp_ptr_diram_iram_to_dram(const void *p) {
+                                                            ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:161:12: warning: integer to pointer cast pessimizes optimization opportunities [performance-no-int-to-ptr]
+    return (void *) ( SOC_DIRAM_DRAM_LOW + (SOC_DIRAM_IRAM_HIGH - (intptr_t)p) - 4);
+           ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:192:52: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_dma_capable(const void *p)
+                                                   ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:204:42: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+bool esp_ptr_dma_ext_capable(const void *p);
+                                         ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:214:53: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_word_aligned(const void *p)
+                                                    ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:227:51: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_executable(const void *p)
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:229:14: warning: variable name 'ip' is too short, expected at least 3 characters [readability-identifier-length]
+    intptr_t ip = (intptr_t) p;
+             ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:249:42: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+bool esp_ptr_byte_accessible(const void *p);
+                                         ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:259:49: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_internal(const void *p) {
+                                                ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:260:10: warning: variable name 'r' is too short, expected at least 3 characters [readability-identifier-length]
+    bool r;
+         ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:294:39: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+bool esp_ptr_external_ram(const void *p);
+                                      ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:304:48: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_ptr_in_drom(const void *p) {
+                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:326:51: warning: parameter name 'sp' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_stack_ptr_in_dram(uint32_t sp)
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:351:51: warning: parameter name 'sp' is too short, expected at least 3 characters [readability-identifier-length]
+inline static bool esp_stack_ptr_is_sane(uint32_t sp)
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:74:51: warning: function 'spinlock_acquire' has cognitive complexity of 26 (threshold 25) [readability-function-cognitive-complexity]
+static inline bool __attribute__((always_inline)) spinlock_acquire(spinlock_t *lock, int32_t timeout)
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:82:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    assert(lock);
+    ^
+/home/xyz/code/esp/idf/esp-idf/components/newlib/platform_include/assert.h:41:51: note: expanded from macro 'assert'
+#define assert(__e) (__builtin_expect(!!(__e), 1) ? (void)0 : __assert_func (__FILENAME__, __LINE__, \
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:84:18: note: nesting level increased to 1
+    irq_status = XTOS_SET_INTLEVEL(XCHAL_EXCM_LEVEL);
+                 ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:91:51: note: expanded from macro 'XTOS_SET_INTLEVEL'
+# define XTOS_SET_INTLEVEL(intlevel)    __extension__({ unsigned __tmp; \
+                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:103:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if (lock->owner == core_owner_id) {
+    ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:104:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        assert(lock->count > 0 && lock->count < 0xFF);    // Bad count value implies memory corruption
+        ^
+/home/xyz/code/esp/idf/esp-idf/components/newlib/platform_include/assert.h:41:51: note: expanded from macro 'assert'
+#define assert(__e) (__builtin_expect(!!(__e), 1) ? (void)0 : __assert_func (__FILENAME__, __LINE__, \
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:104:32: note: +1
+        assert(lock->count > 0 && lock->count < 0xFF);    // Bad count value implies memory corruption
+                               ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:107:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        XTOS_RESTORE_INTLEVEL(irq_status);
+        ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:104:44: note: expanded from macro 'XTOS_RESTORE_INTLEVEL'
+# define XTOS_RESTORE_INTLEVEL(restoreval)      do{ unsigned __tmp = (restoreval); \
+                                                ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:122:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if (lock_set || timeout == SPINLOCK_NO_WAIT) {
+    ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:122:18: note: +1
+    if (lock_set || timeout == SPINLOCK_NO_WAIT) {
+                 ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:124:9: note: +1
+        goto exit;
+        ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:129:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    do {
+    ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:131:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if (lock_set) {
+        ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:135:49: note: +1
+    } while ((timeout == SPINLOCK_WAIT_FOREVER) || (esp_cpu_get_cycle_count() - start_count) <= timeout);
+                                                ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:138:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if (lock_set) {
+    ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:139:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        assert(lock->owner == core_owner_id);
+        ^
+/home/xyz/code/esp/idf/esp-idf/components/newlib/platform_include/assert.h:41:51: note: expanded from macro 'assert'
+#define assert(__e) (__builtin_expect(!!(__e), 1) ? (void)0 : __assert_func (__FILENAME__, __LINE__, \
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:140:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        assert(lock->count == 0);   // This is the first time the lock is set, so count should still be 0
+        ^
+/home/xyz/code/esp/idf/esp-idf/components/newlib/platform_include/assert.h:41:51: note: expanded from macro 'assert'
+#define assert(__e) (__builtin_expect(!!(__e), 1) ? (void)0 : __assert_func (__FILENAME__, __LINE__, \
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:142:7: note: +1, nesting level increased to 1
+    } else {    // We timed out waiting for lock
+      ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:143:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        assert(lock->owner == SPINLOCK_FREE || lock->owner == other_core_owner_id);
+        ^
+/home/xyz/code/esp/idf/esp-idf/components/newlib/platform_include/assert.h:41:51: note: expanded from macro 'assert'
+#define assert(__e) (__builtin_expect(!!(__e), 1) ? (void)0 : __assert_func (__FILENAME__, __LINE__, \
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:143:45: note: +1
+        assert(lock->owner == SPINLOCK_FREE || lock->owner == other_core_owner_id);
+                                            ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:144:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        assert(lock->count < 0xFF); // Bad count value implies memory corruption
+        ^
+/home/xyz/code/esp/idf/esp-idf/components/newlib/platform_include/assert.h:41:51: note: expanded from macro 'assert'
+#define assert(__e) (__builtin_expect(!!(__e), 1) ? (void)0 : __assert_func (__FILENAME__, __LINE__, \
+                                                  ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:148:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    XTOS_RESTORE_INTLEVEL(irq_status);
+    ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:104:44: note: expanded from macro 'XTOS_RESTORE_INTLEVEL'
+# define XTOS_RESTORE_INTLEVEL(restoreval)      do{ unsigned __tmp = (restoreval); \
+                                                ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_hw_support/include/spinlock.h:78:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    uint32_t core_owner_id, other_core_owner_id;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/esp_partition/include/esp_partition.h:8:9: warning: declaration uses identifier '__ESP_PARTITION_H__', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ESP_PARTITION_H__
+        ^~~~~~~~~~~~~~~~~~~
+        ESP_PARTITION_H_
+/home/xyz/code/esp/idf/esp-idf/components/esp_rom/include/esp_rom_sys.h:50:32: warning: parameter name 'us' is too short, expected at least 3 characters [readability-identifier-length]
+void esp_rom_delay_us(uint32_t us);
+                               ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_rom/include/esp_rom_sys.h:59:66: warning: parameter name 'c' is too short, expected at least 3 characters [readability-identifier-length]
+void esp_rom_install_channel_putc(int channel, void (*putc)(char c));
+                                                                 ^
+/home/xyz/code/esp/idf/esp-idf/components/esp_system/include/esp_private/crosscore_int.h:7:9: warning: declaration uses identifier '__ESP_CROSSCORE_INT_H', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ESP_CROSSCORE_INT_H
+        ^~~~~~~~~~~~~~~~~~~~~
+        ESP_CROSSCORE_INT_H
+/home/xyz/code/esp/idf/esp-idf/components/esp_system/include/esp_system.h:8:9: warning: declaration uses identifier '__ESP_SYSTEM_H__', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ESP_SYSTEM_H__
+        ^~~~~~~~~~~~~~~~
+        ESP_SYSTEM_H_
+/home/xyz/code/esp/idf/esp-idf/components/esp_system/include/esp_task.h:21:9: warning: declaration uses identifier '_ESP_TASK_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _ESP_TASK_H_
+        ^~~~~~~~~~~~
+        ESP_TASK_H_
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:182:24: warning: parameter name 'pv' is too short, expected at least 3 characters [readability-identifier-length]
+void vPortFree( void * pv ) PRIVILEGED_FUNCTION;
+                       ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:382:27: warning: function 'xTaskCreatePinnedToCore' has 1 other declaration with different parameter names [readability-inconsistent-declaration-parameter-name]
+        extern BaseType_t xTaskCreatePinnedToCore( TaskFunction_t pxTaskCode,
+                          ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:63:16: note: the 1st inconsistent declaration seen here
+    BaseType_t xTaskCreatePinnedToCore( TaskFunction_t pxTaskCode,
+               ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:63:16: note: differing parameters are named here: ('ulStackDepth', 'pxCreatedTask'), in the other declaration: ('usStackDepth', 'pvCreatedTask')
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:519:29: warning: function 'xTaskCreateStaticPinnedToCore' has 1 other declaration with different parameter names [readability-inconsistent-declaration-parameter-name]
+        extern TaskHandle_t xTaskCreateStaticPinnedToCore( TaskFunction_t pxTaskCode,
+                            ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:101:18: note: the 1st inconsistent declaration seen here
+    TaskHandle_t xTaskCreateStaticPinnedToCore( TaskFunction_t pxTaskCode,
+                 ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:101:18: note: differing parameters are named here: ('puxStackBuffer'), in the other declaration: ('pxStackBuffer')
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:471:13: warning: declaration uses identifier '_frxt_setup_switch', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void _frxt_setup_switch( void );     //Defined in portasm.S
+            ^~~~~~~~~~~~~~~~~~
+            frxt_setup_switch
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:578:5: warning: if with identical then and else branches [bugprone-branch-clone]
+    if (xPortInIsrContext()) {
+    ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:580:7: note: else branch starts here
+    } else {
+      ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:593:5: warning: if with identical then and else branches [bugprone-branch-clone]
+    if (xPortInIsrContext()) {
+    ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:595:7: note: else branch starts here
+    } else {
+      ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:63:16: warning: redundant 'xTaskCreatePinnedToCore' declaration [readability-redundant-declaration]
+    BaseType_t xTaskCreatePinnedToCore( TaskFunction_t pxTaskCode,
+               ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:382:27: note: previously declared here
+        extern BaseType_t xTaskCreatePinnedToCore( TaskFunction_t pxTaskCode,
+                          ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:101:18: warning: redundant 'xTaskCreateStaticPinnedToCore' declaration [readability-redundant-declaration]
+    TaskHandle_t xTaskCreateStaticPinnedToCore( TaskFunction_t pxTaskCode,
+                 ^
+/home/xyz/code/esp/idf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:519:29: note: previously declared here
+        extern TaskHandle_t xTaskCreateStaticPinnedToCore( TaskFunction_t pxTaskCode,
+                            ^
+/home/xyz/code/esp/idf/esp-idf/components/heap/include/multi_heap.h:52:90: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+void __attribute__((deprecated)) multi_heap_aligned_free(multi_heap_handle_t heap, void *p);
+                                                                                         ^
+/home/xyz/code/esp/idf/esp-idf/components/heap/include/multi_heap.h:61:54: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+void multi_heap_free(multi_heap_handle_t heap, void *p);
+                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/heap/include/multi_heap.h:73:58: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+void *multi_heap_realloc(multi_heap_handle_t heap, void *p, size_t size);
+                                                         ^
+/home/xyz/code/esp/idf/esp-idf/components/heap/include/multi_heap.h:84:70: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+size_t multi_heap_get_allocated_size(multi_heap_handle_t heap, void *p);
+                                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:8:9: warning: declaration uses identifier '__ESP_LOG_H__', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ESP_LOG_H__
+        ^~~~~~~~~~~~~
+        ESP_LOG_H_
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:349:9: warning: declaration uses identifier '_ESP_LOG_EARLY_ENABLED', which is a reserved identifier [bugprone-reserved-identifier]
+#define _ESP_LOG_EARLY_ENABLED(log_level) (LOG_LOCAL_LEVEL >= (log_level) && esp_log_default_level >= (log_level))
+        ^~~~~~~~~~~~~~~~~~~~~~
+        ESP_LOG_EARLY_ENABLED
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:506:9: warning: declaration uses identifier '_ESP_LOG_DRAM_LOG_FORMAT', which is a reserved identifier [bugprone-reserved-identifier]
+#define _ESP_LOG_DRAM_LOG_FORMAT(letter, format)  DRAM_STR(#letter " %s: " format "\n")
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        ESP_LOG_DRAM_LOG_FORMAT
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log_internal.h:8:9: warning: declaration uses identifier '__ESP_LOG_INTERNAL_H__', which is a reserved identifier [bugprone-reserved-identifier]
+#define __ESP_LOG_INTERNAL_H__
+        ^~~~~~~~~~~~~~~~~~~~~~
+        ESP_LOG_INTERNAL_H_
+/home/xyz/code/esp/idf/esp-idf/components/newlib/platform_include/esp_newlib.h:26:36: warning: parameter name 'r' is too short, expected at least 3 characters [readability-identifier-length]
+void esp_reent_init(struct _reent* r);
+                                   ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h:32:9: warning: declaration uses identifier '_XTENSA_CORE_CONFIGURATION_H', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTENSA_CORE_CONFIGURATION_H
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XTENSA_CORE_CONFIGURATION_H
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:107:9: warning: declaration uses identifier '_XCHAL_INTLEVEL_MASK', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_INTLEVEL_MASK(n)         XCHAL_INTLEVEL ## n ## _MASK
+        ^~~~~~~~~~~~~~~~~~~~
+        XCHAL_INTLEVEL_MASK
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:109:9: warning: declaration uses identifier '_XCHAL_INTLEVEL_ANDBELOWMASK', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_INTLEVEL_ANDBELOWMASK(n) XCHAL_INTLEVEL ## n ## _ANDBELOW_MASK
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XCHAL_INTLEVEL_ANDBELOWMASK
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:111:9: warning: declaration uses identifier '_XCHAL_INTLEVEL_NUM', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_INTLEVEL_NUM(n)          XCHAL_INTLEVEL ## n ## _NUM
+        ^~~~~~~~~~~~~~~~~~~
+        XCHAL_INTLEVEL_NUM
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:113:9: warning: declaration uses identifier '_XCHAL_INT_LEVEL', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_INT_LEVEL(n)             XCHAL_INT ## n ## _LEVEL
+        ^~~~~~~~~~~~~~~~
+        XCHAL_INT_LEVEL
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:115:9: warning: declaration uses identifier '_XCHAL_INT_TYPE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_INT_TYPE(n)              XCHAL_INT ## n ## _TYPE
+        ^~~~~~~~~~~~~~~
+        XCHAL_INT_TYPE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:117:9: warning: declaration uses identifier '_XCHAL_TIMER_INTERRUPT', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_TIMER_INTERRUPT(n)       XCHAL_TIMER ## n ## _INTERRUPT
+        ^~~~~~~~~~~~~~~~~~~~~~
+        XCHAL_TIMER_INTERRUPT
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:521:9: warning: declaration uses identifier '_XCHAL_INTLEVEL_VECTOR_VADDR', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_INTLEVEL_VECTOR_VADDR(n)         XCHAL_INTLEVEL ## n ## _VECTOR_VADDR
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XCHAL_INTLEVEL_VECTOR_VADDR
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:806:9: warning: declaration uses identifier '_MEMCTL_SNOOP_EN', which is a reserved identifier [bugprone-reserved-identifier]
+#define _MEMCTL_SNOOP_EN                0x00            /* Don't enable snoop */
+        ^~~~~~~~~~~~~~~~
+        MEMCTL_SNOOP_EN
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:812:9: warning: declaration uses identifier '_MEMCTL_L0IBUF_EN', which is a reserved identifier [bugprone-reserved-identifier]
+#define _MEMCTL_L0IBUF_EN               0x01            /* Enable loop buffer */
+        ^~~~~~~~~~~~~~~~~
+        MEMCTL_L0IBUF_EN
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:830:9: warning: declaration uses identifier '_XCHAL_ITLB_SET', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_ITLB_SET(n,_what)        XCHAL_ITLB_SET ## n ## _what
+        ^~~~~~~~~~~~~~~
+        XCHAL_ITLB_SET
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:832:9: warning: declaration uses identifier '_XCHAL_ITLB_SET_E', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_ITLB_SET_E(n,i,_what)    XCHAL_ITLB_SET ## n ## _E ## i ## _what
+        ^~~~~~~~~~~~~~~~~
+        XCHAL_ITLB_SET_E
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:834:9: warning: declaration uses identifier '_XCHAL_DTLB_SET', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_DTLB_SET(n,_what)        XCHAL_DTLB_SET ## n ## _what
+        ^~~~~~~~~~~~~~~
+        XCHAL_DTLB_SET
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:836:9: warning: declaration uses identifier '_XCHAL_DTLB_SET_E', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_DTLB_SET_E(n,i,_what)    XCHAL_DTLB_SET ## n ## _E ## i ## _what
+        ^~~~~~~~~~~~~~~~~
+        XCHAL_DTLB_SET_E
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:1266:9: warning: declaration uses identifier '_XCHAL_CP_SA_SIZE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_CP_SA_SIZE(n)            XCHAL_CP ## n ## _SA_SIZE
+        ^~~~~~~~~~~~~~~~~
+        XCHAL_CP_SA_SIZE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:1268:9: warning: declaration uses identifier '_XCHAL_CP_SA_ALIGN', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XCHAL_CP_SA_ALIGN(n)           XCHAL_CP ## n ## _SA_ALIGN
+        ^~~~~~~~~~~~~~~~~~
+        XCHAL_CP_SA_ALIGN
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h:33:9: warning: declaration uses identifier '_XTENSA_CORE_TIE_H', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTENSA_CORE_TIE_H
+        ^~~~~~~~~~~~~~~~~~
+        XTENSA_CORE_TIE_H
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:36:14: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+    uint32_t id;
+             ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:51:14: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+    uint32_t id;
+             ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:63:11: warning: variable name 'sp' is too short, expected at least 3 characters [readability-identifier-length]
+    void *sp;
+          ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:117:48: warning: 2 adjacent parameters of 'xt_utils_set_breakpoint' of convertible types are easily swapped by mistake [bugprone-easily-swappable-parameters]
+FORCE_INLINE_ATTR void xt_utils_set_breakpoint(int bp_num, uint32_t bp_addr)
+                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:117:52: note: the first parameter in the range is 'bp_num'
+FORCE_INLINE_ATTR void xt_utils_set_breakpoint(int bp_num, uint32_t bp_addr)
+                                                   ^~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:117:69: note: the last parameter in the range is 'bp_addr'
+FORCE_INLINE_ATTR void xt_utils_set_breakpoint(int bp_num, uint32_t bp_addr)
+                                                                    ^~~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:117:48: note: 
+FORCE_INLINE_ATTR void xt_utils_set_breakpoint(int bp_num, uint32_t bp_addr)
+                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:117:60: note: 'int' and 'uint32_t' may be implicitly converted: 'int' -> 'uint32_t' (as 'unsigned int'), 'uint32_t' (as 'unsigned int') -> 'int'
+FORCE_INLINE_ATTR void xt_utils_set_breakpoint(int bp_num, uint32_t bp_addr)
+                                                           ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:148:48: warning: 3 adjacent parameters of 'xt_utils_set_watchpoint' of convertible types are easily swapped by mistake [bugprone-easily-swappable-parameters]
+FORCE_INLINE_ATTR void xt_utils_set_watchpoint(int wp_num,
+                                               ^~~~~~~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:148:52: note: the first parameter in the range is 'wp_num'
+FORCE_INLINE_ATTR void xt_utils_set_watchpoint(int wp_num,
+                                                   ^~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:150:55: note: the last parameter in the range is 'size'
+                                               size_t size,
+                                                      ^~~~
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:148:48: note: 
+FORCE_INLINE_ATTR void xt_utils_set_watchpoint(int wp_num,
+                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:149:48: note: 'int' and 'uint32_t' may be implicitly converted: 'int' -> 'uint32_t' (as 'unsigned int'), 'uint32_t' (as 'unsigned int') -> 'int'
+                                               uint32_t wp_addr,
+                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:148:48: note: 
+FORCE_INLINE_ATTR void xt_utils_set_watchpoint(int wp_num,
+                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:150:48: note: 'int' and 'size_t' may be implicitly converted: 'int' -> 'size_t' (as 'unsigned int'), 'size_t' (as 'unsigned int') -> 'int'
+                                               size_t size,
+                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:149:48: note: after resolving type aliases, the common type of 'uint32_t' and 'size_t' is 'unsigned int'
+                                               uint32_t wp_addr,
+                                               ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:205:74: warning: 2 adjacent parameters of 'xt_utils_compare_and_set' of similar type ('uint32_t') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+FORCE_INLINE_ATTR bool xt_utils_compare_and_set(volatile uint32_t *addr, uint32_t compare_value, uint32_t new_value)
+                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:205:83: note: the first parameter in the range is 'compare_value'
+FORCE_INLINE_ATTR bool xt_utils_compare_and_set(volatile uint32_t *addr, uint32_t compare_value, uint32_t new_value)
+                                                                                  ^~~~~~~~~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xt_utils.h:205:107: note: the last parameter in the range is 'new_value'
+FORCE_INLINE_ATTR bool xt_utils_compare_and_set(volatile uint32_t *addr, uint32_t compare_value, uint32_t new_value)
+                                                                                                          ^~~~~~~~~
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:330:9: warning: declaration uses identifier '_XTHAL_PREFETCH_BLOCKS', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_PREFETCH_BLOCKS(n)       ((n)<0?0:(n)<5?(n):(n)<15?((n)>>1)+2:9)
+        ^~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_PREFETCH_BLOCKS
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1223:46: warning: parameter name 'x' is too short, expected at least 3 characters [readability-identifier-length]
+extern int xthal_encode_memory_type(uint32_t x);
+                                             ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1310:54: warning: parameter name 'e' is too short, expected at least 3 characters [readability-identifier-length]
+xthal_calc_cacheadrdis(const struct xthal_MPU_entry* e, uint32_t n);
+                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1384:9: warning: declaration uses identifier '_XTHAL_SYSTEM_CACHE_BITS', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_SYSTEM_CACHE_BITS 0x000f0000
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_SYSTEM_CACHE_BITS
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1385:9: warning: declaration uses identifier '_XTHAL_LOCAL_CACHE_BITS', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_LOCAL_CACHE_BITS 0x00f00000
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_LOCAL_CACHE_BITS
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1386:9: warning: declaration uses identifier '_XTHAL_MEM_SYSTEM_RWC_MASK', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_MEM_SYSTEM_RWC_MASK 0x00070000
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_MEM_SYSTEM_RWC_MASK
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1387:9: warning: declaration uses identifier '_XTHAL_MEM_LOCAL_RWC_MASK', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_MEM_LOCAL_RWC_MASK  0x00700000
+        ^~~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_MEM_LOCAL_RWC_MASK
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1388:9: warning: declaration uses identifier '_XTHAL_SHIFT_RWC', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_SHIFT_RWC 16
+        ^~~~~~~~~~~~~~~~
+        XTHAL_SHIFT_RWC
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1390:9: warning: declaration uses identifier '_XTHAL_MEM_ANY_SHAREABLE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_MEM_ANY_SHAREABLE(x) (((x) & XTHAL_MEM_SYSTEM_SHAREABLE) ? 1 : 0)
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_MEM_ANY_SHAREABLE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1392:9: warning: declaration uses identifier '_XTHAL_MEM_INNER_SHAREABLE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_MEM_INNER_SHAREABLE(x) ((((x) & XTHAL_MEM_SYSTEM_SHAREABLE) \
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_MEM_INNER_SHAREABLE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1395:9: warning: declaration uses identifier '_XTHAL_MEM_IS_BUFFERABLE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_MEM_IS_BUFFERABLE(x) (((x) & XTHAL_MEM_BUFFERABLE) ? 1 : 0)
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_MEM_IS_BUFFERABLE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1397:9: warning: declaration uses identifier '_XTHAL_MEM_IS_DEVICE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_MEM_IS_DEVICE(x) (((x) & XTHAL_MEM_DEVICE) ? 1 : 0)
+        ^~~~~~~~~~~~~~~~~~~~
+        XTHAL_MEM_IS_DEVICE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1399:9: warning: declaration uses identifier '_XTHAL_NON_CACHEABLE_DOMAIN', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_NON_CACHEABLE_DOMAIN(x) \
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_NON_CACHEABLE_DOMAIN
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1402:9: warning: declaration uses identifier '_XTHAL_CACHEABLE_DOMAIN', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_CACHEABLE_DOMAIN(x)  (_XTHAL_MEM_ANY_SHAREABLE(x) ? \
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_CACHEABLE_DOMAIN
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1405:9: warning: declaration uses identifier '_XTHAL_MEM_CACHE_MASK', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_MEM_CACHE_MASK(x) ((x) & _XTHAL_SYSTEM_CACHE_BITS)
+        ^~~~~~~~~~~~~~~~~~~~~
+        XTHAL_MEM_CACHE_MASK
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1407:9: warning: declaration uses identifier '_XTHAL_IS_SYSTEM_NONCACHEABLE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_IS_SYSTEM_NONCACHEABLE(x) \
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_IS_SYSTEM_NONCACHEABLE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1411:9: warning: declaration uses identifier '_XTHAL_ENCODE_DEVICE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_ENCODE_DEVICE(x) \
+        ^~~~~~~~~~~~~~~~~~~~
+        XTHAL_ENCODE_DEVICE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1415:9: warning: declaration uses identifier '_XTHAL_ENCODE_SYSTEM_NONCACHEABLE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_ENCODE_SYSTEM_NONCACHEABLE(x) \
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_ENCODE_SYSTEM_NONCACHEABLE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1419:9: warning: declaration uses identifier '_XTHAL_ENCODE_SYSTEM_CACHEABLE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_ENCODE_SYSTEM_CACHEABLE(x) \
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_ENCODE_SYSTEM_CACHEABLE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/hal.h:1428:9: warning: declaration uses identifier '_XTHAL_ENCODE_SYSTEM_CACHEABLE_LOCAL_CACHEABLE', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTHAL_ENCODE_SYSTEM_CACHEABLE_LOCAL_CACHEABLE(x) \
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XTHAL_ENCODE_SYSTEM_CACHEABLE_LOCAL_CACHEABLE
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h:28:9: warning: declaration uses identifier '_XTOS_CORE_STATE_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTOS_CORE_STATE_H_
+        ^~~~~~~~~~~~~~~~~~~
+        XTOS_CORE_STATE_H_
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h:28:9: warning: declaration uses identifier '_XTRUNTIME_FRAMES_H_', which is a reserved identifier [bugprone-reserved-identifier]
+#define _XTRUNTIME_FRAMES_H_
+        ^~~~~~~~~~~~~~~~~~~~
+        XTRUNTIME_FRAMES_H_
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:50:9: warning: declaration uses identifier '_xtos_set_execption_handler', which is reserved in the global namespace [bugprone-reserved-identifier]
+#define _xtos_set_execption_handler _xtos_set_exception_handler /* backward compatibility */
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+        xtos_set_execption_handler
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:51:9: warning: declaration uses identifier '_xtos_set_saved_intenable', which is reserved in the global namespace [bugprone-reserved-identifier]
+#define _xtos_set_saved_intenable       _xtos_ints_on   /* backward compatibility */
+        ^~~~~~~~~~~~~~~~~~~~~~~~~
+        xtos_set_saved_intenable
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:52:9: warning: declaration uses identifier '_xtos_clear_saved_intenable', which is reserved in the global namespace [bugprone-reserved-identifier]
+#define _xtos_clear_saved_intenable     _xtos_ints_off  /* backward compatibility */
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+        xtos_clear_saved_intenable
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:65:15: warning: declaration uses identifier '_xtos_handler_func', which is reserved in the global namespace [bugprone-reserved-identifier]
+typedef void (_xtos_handler_func)(void);
+              ^~~~~~~~~~~~~~~~~~
+              xtos_handler_func
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:67:29: warning: declaration uses identifier '_xtos_handler', which is reserved in the global namespace [bugprone-reserved-identifier]
+typedef _xtos_handler_func *_xtos_handler;
+                            ^~~~~~~~~~~~~
+                            xtos_handler
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:155:21: warning: declaration uses identifier '_xtos_ints_off', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern unsigned int     _xtos_ints_off( unsigned int mask );
+                        ^~~~~~~~~~~~~~
+                        xtos_ints_off
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:156:21: warning: declaration uses identifier '_xtos_ints_on', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern unsigned int     _xtos_ints_on( unsigned int mask );
+                        ^~~~~~~~~~~~~
+                        xtos_ints_on
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:159:20: warning: declaration uses identifier '_xtos_interrupt_enable', which is reserved in the global namespace [bugprone-reserved-identifier]
+static inline void _xtos_interrupt_enable(unsigned int intnum)
+                   ^~~~~~~~~~~~~~~~~~~~~~
+                   xtos_interrupt_enable
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:164:20: warning: declaration uses identifier '_xtos_interrupt_disable', which is reserved in the global namespace [bugprone-reserved-identifier]
+static inline void _xtos_interrupt_disable(unsigned int intnum)
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+                   xtos_interrupt_disable
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:170:18: warning: declaration uses identifier '_xtos_set_min_intlevel', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern unsigned         _xtos_set_min_intlevel( int intlevel );
+                        ^~~~~~~~~~~~~~~~~~~~~~
+                        xtos_set_min_intlevel
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:171:18: warning: declaration uses identifier '_xtos_restore_intlevel', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern unsigned         _xtos_restore_intlevel( unsigned restoreval );
+                        ^~~~~~~~~~~~~~~~~~~~~~
+                        xtos_restore_intlevel
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:172:18: warning: declaration uses identifier '_xtos_restore_just_intlevel', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern unsigned         _xtos_restore_just_intlevel( unsigned restoreval );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_restore_just_intlevel
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:173:22: warning: declaration uses identifier '_xtos_set_interrupt_handler', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern _xtos_handler    _xtos_set_interrupt_handler( int n, _xtos_handler f );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_set_interrupt_handler
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:173:72: warning: parameter name 'f' is too short, expected at least 3 characters [readability-identifier-length]
+extern _xtos_handler    _xtos_set_interrupt_handler( int n, _xtos_handler f );
+                                                                          ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:174:22: warning: declaration uses identifier '_xtos_set_interrupt_handler_arg', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern _xtos_handler    _xtos_set_interrupt_handler_arg( int n, _xtos_handler f, void *arg );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_set_interrupt_handler_arg
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:174:76: warning: parameter name 'f' is too short, expected at least 3 characters [readability-identifier-length]
+extern _xtos_handler    _xtos_set_interrupt_handler_arg( int n, _xtos_handler f, void *arg );
+                                                                              ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:175:22: warning: declaration uses identifier '_xtos_set_exception_handler', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern _xtos_handler    _xtos_set_exception_handler( int n, _xtos_handler f );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_set_exception_handler
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:175:72: warning: parameter name 'f' is too short, expected at least 3 characters [readability-identifier-length]
+extern _xtos_handler    _xtos_set_exception_handler( int n, _xtos_handler f );
+                                                                          ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:177:14: warning: declaration uses identifier '_xtos_memep_initrams', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_memep_initrams( void );
+                        ^~~~~~~~~~~~~~~~~~~~
+                        xtos_memep_initrams
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:178:14: warning: declaration uses identifier '_xtos_memep_enable', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_memep_enable( int flags );
+                        ^~~~~~~~~~~~~~~~~~
+                        xtos_memep_enable
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:182:14: warning: declaration uses identifier '_xtos_dispatch_level1_interrupts', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_dispatch_level1_interrupts( void );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_dispatch_level1_interrupts
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:185:14: warning: declaration uses identifier '_xtos_dispatch_level2_interrupts', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_dispatch_level2_interrupts( void );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_dispatch_level2_interrupts
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:188:14: warning: declaration uses identifier '_xtos_dispatch_level3_interrupts', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_dispatch_level3_interrupts( void );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_dispatch_level3_interrupts
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:191:14: warning: declaration uses identifier '_xtos_dispatch_level4_interrupts', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_dispatch_level4_interrupts( void );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_dispatch_level4_interrupts
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:194:14: warning: declaration uses identifier '_xtos_dispatch_level5_interrupts', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_dispatch_level5_interrupts( void );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_dispatch_level5_interrupts
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:197:14: warning: declaration uses identifier '_xtos_dispatch_level6_interrupts', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_dispatch_level6_interrupts( void );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        xtos_dispatch_level6_interrupts
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:201:21: warning: declaration uses identifier '_xtos_read_ints', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern unsigned int     _xtos_read_ints( void );
+                        ^~~~~~~~~~~~~~~
+                        xtos_read_ints
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:202:14: warning: declaration uses identifier '_xtos_clear_ints', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_clear_ints( unsigned int mask );
+                        ^~~~~~~~~~~~~~~~
+                        xtos_clear_ints
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:206:13: warning: declaration uses identifier '_xtos_core_shutoff', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern int              _xtos_core_shutoff(unsigned flags);
+                        ^~~~~~~~~~~~~~~~~~
+                        xtos_core_shutoff
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:207:13: warning: declaration uses identifier '_xtos_core_save', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern int              _xtos_core_save(unsigned flags, XtosCoreState *savearea, void *code);
+                        ^~~~~~~~~~~~~~~
+                        xtos_core_save
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:208:14: warning: declaration uses identifier '_xtos_core_restore', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_core_restore(unsigned retvalue, XtosCoreState *savearea);
+                        ^~~~~~~~~~~~~~~~~~
+                        xtos_core_restore
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:218:14: warning: declaration uses identifier '_xtos_timer_0_delta', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_timer_0_delta( int cycles );
+                        ^~~~~~~~~~~~~~~~~~~
+                        xtos_timer_0_delta
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:221:14: warning: declaration uses identifier '_xtos_timer_1_delta', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_timer_1_delta( int cycles );
+                        ^~~~~~~~~~~~~~~~~~~
+                        xtos_timer_1_delta
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa/xtruntime.h:224:14: warning: declaration uses identifier '_xtos_timer_2_delta', which is reserved in the global namespace [bugprone-reserved-identifier]
+extern void             _xtos_timer_2_delta( int cycles );
+                        ^~~~~~~~~~~~~~~~~~~
+                        xtos_timer_2_delta
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa_api.h:36:9: warning: declaration uses identifier '__XTENSA_API_H__', which is a reserved identifier [bugprone-reserved-identifier]
+#define __XTENSA_API_H__
+        ^~~~~~~~~~~~~~~~
+        XTENSA_API_H_
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa_api.h:67:70: warning: parameter name 'f' is too short, expected at least 3 characters [readability-identifier-length]
+extern xt_exc_handler xt_set_exception_handler(int n, xt_exc_handler f);
+                                                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/xtensa/include/xtensa_api.h:80:62: warning: parameter name 'f' is too short, expected at least 3 characters [readability-identifier-length]
+extern xt_handler xt_set_interrupt_handler(int n, xt_handler f, void * arg);
+                                                             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:55:13: warning: function 'ble_mesh_provisioning_cb' has cognitive complexity of 79 (threshold 25) [readability-function-cognitive-complexity]
+static void ble_mesh_provisioning_cb(esp_ble_mesh_prov_cb_event_t event, esp_ble_mesh_prov_cb_param_t *param){
+            ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:56:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    switch (event){
+    ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:58:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGI(TAG, "ESP_BLE_MESH_PROV_REGISTER_COMP_ENT, err_code %d", param->prov_register_comp.err_code );
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:58:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGI(TAG, "ESP_BLE_MESH_PROV_REGISTER_COMP_ENT, err_code %d", param->prov_register_comp.err_code );
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:58:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_PROV_REGISTER_COMP_ENT, err_code %d", param->prov_register_comp.err_code );
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:58:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_PROV_REGISTER_COMP_ENT, err_code %d", param->prov_register_comp.err_code );
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:58:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_PROV_REGISTER_COMP_ENT, err_code %d", param->prov_register_comp.err_code );
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:58:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_PROV_REGISTER_COMP_ENT, err_code %d", param->prov_register_comp.err_code );
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:58:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_PROV_REGISTER_COMP_ENT, err_code %d", param->prov_register_comp.err_code );
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:61:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:61:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:61:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:61:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:61:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:61:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:61:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:64:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:64:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:64:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:64:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:64:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:64:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:64:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:67:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:67:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:67:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:67:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:67:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:67:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:67:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:70:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_RESET_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:70:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_RESET_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:70:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_RESET_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:70:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_RESET_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:70:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_RESET_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:70:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_RESET_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:70:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_PROV_RESET_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:73:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:73:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:73:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:73:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:73:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:73:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:73:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:80:13: warning: function 'ble_mesh_config_server_cb' has cognitive complexity of 51 (threshold 25) [readability-function-cognitive-complexity]
+static void ble_mesh_config_server_cb(esp_ble_mesh_cfg_server_cb_event_t event, esp_ble_mesh_cfg_server_cb_param_t *param){
+            ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:81:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if (event == ESP_BLE_MESH_CFG_SERVER_STATE_CHANGE_EVT){
+    ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:82:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        switch ( param->ctx.recv_op ){
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:84:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:84:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:84:17: note: +5, including nesting penalty of 4, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:84:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:84:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:84:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:84:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:87:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:87:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:87:17: note: +5, including nesting penalty of 4, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:87:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:87:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:87:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:87:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:90:17: note: +3, including nesting penalty of 2, nesting level increased to 3
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:90:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:90:17: note: +5, including nesting penalty of 4, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:90:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:90:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:90:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:90:17: note: +1, nesting level increased to 5
+                ESP_LOGI(TAG, "ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND");
+                ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:86:13: warning: switch has 2 consecutive identical branches [bugprone-branch-clone]
+            case ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND:
+            ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:91:22: note: last of these clones ends here
+                break;
+                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:98:13: warning: function 'ble_mesh_generic_server_cb' has cognitive complexity of 53 (threshold 25) [readability-function-cognitive-complexity]
+static void ble_mesh_generic_server_cb(esp_ble_mesh_generic_server_cb_event_t event, esp_ble_mesh_generic_server_cb_param_t *param){
+            ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:99:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    switch (event) {
+    ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:101:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:101:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:101:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:101:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:101:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:101:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:101:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:104:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_GET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:104:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_GET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:104:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_GET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:104:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_GET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:104:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_GET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:104:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_GET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:104:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_GET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:107:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_SET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:107:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_SET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:107:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_SET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:107:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_SET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:107:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_SET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:107:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_SET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:107:13: note: +1, nesting level increased to 4
+            ESP_LOGI(TAG, "ESP_BLE_MESH_GENERIC_SERVER_RECV_SET_MSG_EVT");
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:367:38: note: expanded from macro 'ESP_LOGI'
+#define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:110:13: note: +2, including nesting penalty of 1, nesting level increased to 2
+            ESP_LOGE(TAG, "Unknown Generic Server event 0x%02x", event);
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:365:38: note: expanded from macro 'ESP_LOGE'
+#define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:462:54: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+#define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+                                                     ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:110:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            ESP_LOGE(TAG, "Unknown Generic Server event 0x%02x", event);
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:365:38: note: expanded from macro 'ESP_LOGE'
+#define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:9: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:110:13: note: +4, including nesting penalty of 3, nesting level increased to 4
+            ESP_LOGE(TAG, "Unknown Generic Server event 0x%02x", event);
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:365:38: note: expanded from macro 'ESP_LOGE'
+#define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:435:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:110:13: note: +1, nesting level increased to 4
+            ESP_LOGE(TAG, "Unknown Generic Server event 0x%02x", event);
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:365:38: note: expanded from macro 'ESP_LOGE'
+#define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:436:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:110:13: note: +1, nesting level increased to 4
+            ESP_LOGE(TAG, "Unknown Generic Server event 0x%02x", event);
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:365:38: note: expanded from macro 'ESP_LOGE'
+#define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:437:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:110:13: note: +1, nesting level increased to 4
+            ESP_LOGE(TAG, "Unknown Generic Server event 0x%02x", event);
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:365:38: note: expanded from macro 'ESP_LOGE'
+#define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:438:14: note: expanded from macro 'ESP_LOG_LEVEL'
+        else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+             ^
+/home/xyz/code/esp/projects/practise/mesh_server/main/main.c:110:13: note: +1, nesting level increased to 4
+            ESP_LOGE(TAG, "Unknown Generic Server event 0x%02x", event);
+            ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:365:38: note: expanded from macro 'ESP_LOGE'
+#define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+                                     ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:463:41: note: expanded from macro 'ESP_LOG_LEVEL_LOCAL'
+        if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+                                        ^
+/home/xyz/code/esp/idf/esp-idf/components/log/include/esp_log.h:439:9: note: expanded from macro 'ESP_LOG_LEVEL'
+        else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+        ^
